@@ -1,0 +1,130 @@
+# Site settings
+title: Canepa Dental, Dr. Al Canepa, DDS. Serving Vancouver, WA and the Southwest Washington area.
+description: Dr. Canepa has been creating beautiful smiles for over 20 years! Dr. Canepa and the entire Canepa Dental team will give you the comprehensive, personalized care that you expect and deserve. We look forward to meeting with you and helping you achieve the smile of your dreams.
+email: "drcanepa@comcast.net"  # e.g. admin@asird.org
+experience: 20
+
+url: https://www.canepadental.com/
+
+logourl:  /img/asird-logo.png # Your logo or avatar files
+navlogourl: /images/348s.jpg # Your logo or avatar files
+footer_logourl: '/images/348s.jpg'
+vertical_logourl:  # logo used in footer
+bg-tile:
+tos-link:
+
+authedurl: # should be blank or '/' unless customized for use with the bowtie-auth.js pswd protection
+
+stagingurl:
+productionurl:
+
+author:
+author_thumbnail:  # default author avatar
+
+# Theme additions - please update the default values if you intend to use these variables
+
+google_analytics_id:  '' # Your google analytics ID (e.g. 'UA-XXXXXXXX-X')
+google_api_key: AIzaSyCWwI6hxOqcIqYZOoVcmiCNK6Zm4uBR0CI
+sumoid:  # e.g. 'b8fe3b113e8eff21df4c245af51b205fc3a7ff5ab889892be1e98f4a50cd94a6'
+
+doctor:
+  name: Al Canepa, DDS
+  practicename: Canepa Dental
+  practicetagline: Over 20 years of experience.
+  intro: "Dr. Canepa was born in a small town in Northern California. After setting up his original practice, he joined an implant study group in Pennsylvania. He studied with Dr. Carl Misch for two years learning to place and restore implants. He has dedicated his life to helping patients achieve optimal oral health. In 2012, he decided to further his implant knowledge by joining the Synergy Training Program. He is still an active participant in this study group."
+  profile_img: /master_bio_images\canepa-team\Dr_Canepa_Featured.png
+  education: "<p><strong>Doctor of Dental Surgery</strong></p><p>Case Western Reserve School of Dentistry, Cleveland, OH</p><p><strong>Bachelor of Science</strong></p><p>University of Southern California</p>"
+  contact:
+    company:  "Canepa Dental"
+    address: "1405 Southeast 164th Ave., Suite 202"
+    city: "Vancouver"
+    state: "WA"
+    zip: "98683"
+    country:  "USA"
+    phone:  (360) 514-0707  # e.g.  754-307-6990
+    fax: (360) 514-9395
+    latlng: 45.611374,-122.503532
+    twitter:   'https://twitter.com/canepadental'
+    facebook:  'https://www.facebook.com/Canepa-Dental-292236340543/'
+    yelp: 'https://www.yelp.com/biz/albert-canepa-dds-canepa-dental-vancouver-2'
+    google_reviews: 'https://goo.gl/maps/yegZREHLzND2'
+    healthgrades:
+    linkedin:
+    youtube:
+
+  disqus_id:           # From your Disqus account (e.g. 'bowtieexample')
+
+  addthis_id:  ''       # From your Add This account (e.g. 'ra-00000a0a00a00aaa')
+
+# Permalinks
+permalink:           /:categories/:title/
+relative_permalinks: false
+
+#gems: [jekyll-paginate]
+
+# Pagination config
+#paginate: 5
+#paginate_path: /page/:num
+
+
+#toggle future post dates back on
+future: true
+
+#compress sass
+sass:
+  style: compressed
+
+# Jekyll build/resource locations
+
+# source:  .
+# destination: ./_site
+# plugins_dir: null
+# layouts_dir: ./_layouts
+# data_dir:    ./_data
+# includes_dir: ./_includes
+
+# Jekyll Handling Reading
+include:    [] # Specify files to be included in build that may be otherwise ignored (e.g. '[.htaccess]')
+
+keep_files: [] # Files/Folders located inside the ./_site folder to be retained on build (e.g.'[.git, .svn]')
+
+# Files/Folders to be excluded from generated '_site' folder
+exclude:
+  - .gitignore
+  - .sass-cache
+
+# define collection objects
+collections:
+  sections:
+    output: true
+    permalink: /sections/:path/
+  hero-slides:
+    output: false
+  office-slides:
+    output: false
+  procedures:
+    output: true
+  procedure-categories:
+    output: true
+  gallery:
+    output: false
+  reviews:
+    output: false
+  team:
+    output: false
+  patient-docs:
+    output: false
+
+defaults:
+  - scope:
+      type: procedure-categories
+    values:
+      layout: procedure-categories
+  - scope:
+      type: pages
+    values:
+      noindex: true
+  - scope:
+      type: procedures
+    values:
+      layout: procedure

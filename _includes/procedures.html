@@ -1,0 +1,14 @@
+<h2 class="title text-center"><span class="underlined">Procedures</span></h2>
+<div class="row procedure-row">
+  {% assign procedures = site.procedure-categories | sort: "order" %}
+  {% for procedure in procedures %}
+  <div class="col-sm procedure-tile text-center">
+    <a href="{{procedure.url}}">
+    <div class="procedure-image">
+      <img data-src="{{procedure.img_path}}" alt="">
+      <p class="text-white text-center">{{procedure.title}}</p>
+    </div>
+  </a>
+  </div>
+  {% endfor %}
+</div>

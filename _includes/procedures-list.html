@@ -1,0 +1,18 @@
+{% assign categories = site.procedure-categories %}
+{% assign procedures = site.procedures %}
+<div class="container">
+{% for category in categories %}
+<h2 class="title text-center"><span class="underlined blue">{{category.title}}</span></h2>
+<div class="row">
+{% for procedure in procedures %}
+{% if procedure.category == category.category %}
+{% unless procedure.opt-out %}
+<div class="col-sm-4">
+  <h5><a href="{{procedure.url}}">{{procedure.title}}{{section.available}}</a></h5>
+</div>
+{% endunless %}
+{% endif %}
+{% endfor %}
+</div>
+{% endfor %}
+</div>

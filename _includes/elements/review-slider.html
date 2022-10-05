@@ -1,0 +1,50 @@
+<link rel="stylesheet" type="text/css" href="/css/components/testimonials.css"/>
+  <div id="review-slider" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      {% for review in site.reviews %}
+      <li data-target="#review-slider" data-slide-to="{{ forloop.index0 }}" class="indicator-blue {% if forloop.first %}active{% endif %}"></li>
+      {% endfor %}
+    </ul>
+
+    <!-- The slideshow -->
+    <h2 class="text-center title"><span class="underlined blue">What Our Patients Say</span></h2>
+
+    <div class="carousel-inner">
+
+      {% for review in site.reviews %}
+      <div class="item carousel-item {% if forloop.first == true %}active{% endif %}" style="{% if page.style.height %}height:{{ page.style.height }}{% endif %}">
+            <div class="quote left">
+              <i class="fas fa-quote-left fa-5x"></i>
+            </div>
+            <div class="quote right">
+              <i class="fas fa-quote-right fa-5x"></i>
+            </div>
+        <div class="carousel-caption">
+          {% include elements/star-rating.html %}
+          <h4 class="text-center">{{ review.content }}</h4>
+          <br/>
+          <h4 class="text-center"><em>- {{review.author}}</em></h4>
+          <br/>
+          <h5 class="text-center">
+            {% if review.source == "facebook" %}<a href="{{site.doctor.contact.facebook}}"><i class="fab fa-facebook-f" style="margin: .5em;"></i>Read more on {{ review.source }}</a>
+            {% elsif review.source == "twitter" %}<a href="{{site.doctor.contact.twitter}}"><i class="fab fa-twitter" style="margin: .5em;"></i>Read more on {{ review.source }}</a>
+            {% elsif review.source == "yelp" %}<a target="_blank" href="{{ site.doctor.contact.yelp }}"><i class="fab fa-yelp"></i>Read more on {{ review.source }}</a>
+            {% elsif review.source == "google" %}<a href="{{site.doctor.contact.google_reviews}}"><i class="fab fa-google" style="margin: .5em;"></i>Read more on {{ review.source }}</a>
+            {% elsif review.source == "healthgrades" %}<a href="{{site.doctor.contact.healthgrades}}"><i class="fas fa-user-md" style="margin: .5em;"></i>Read more on {{ review.source }}</a> {% endif %}
+          </h5>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#review-slider" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="carousel-control-next" href="#review-slider" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right text-warning"></span>
+    </a>
+
+  </div>

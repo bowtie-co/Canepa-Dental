@@ -1,0 +1,16 @@
+<div id="gallery">
+  <h2 class="title text-center"><span class="underlined blue">The Results Speak for Themselves</span></h2>
+  <p>We are committed to providing our patients with the highest quality oral healthcare in the most gentle, efficient, fun and enthusiastic manner possible!</p>
+  {% assign images = site.gallery %}
+  <div class="row">
+  {% for image in images %}
+    <div class="col-sm-6 col-md-4 col-xl-3 gallery-image text-center">
+      <div class="img-fluid">
+        <img data-src="{{ image.img_path }}" alt="Procedure image {{forloop.index}}">
+      </div>
+      <p><strong>{{image.procedure-name}}</strong></p>
+      <p>{{image.description_content}}</p>
+    </div>
+  {% endfor %}
+  </div>
+</div>

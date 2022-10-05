@@ -1,0 +1,34 @@
+
+<h2 class="text-center title"><span class="underlined blue">What Our Patients Say</span></h2>
+
+<div class="container">
+
+  {% for review in site.reviews %}
+  {% if review.featured  %}
+  <div class="quote left">
+    <i class="fas fa-quote-left fa-5x"></i>
+  </div>
+  <div class="quote right">
+    <i class="fas fa-quote-right fa-5x"></i>
+  </div>
+  <div class="">
+    {% include elements/star-rating.html %}
+    <h5 class="text-center" style="font-weight:300;">{{ review.content }}</h5>
+    <br/>
+    <h5 class="text-center" style="font-weight:300;"><em>- {{review.author}}</em></h5>
+    <br/>
+    <h5 class="text-center">
+      {% if review.source == "facebook" %}<a target="_blank" href="{{site.doctor.contact.facebook}}"><i class="fab fa-facebook-f" style="margin: .5em;"></i>Read more on {{ review.source }}</a>
+      {% elsif review.source == "twitter" %}<a target="_blank" href="{{site.doctor.contact.twitter}}"><i class="fab fa-twitter" style="margin: .5em;"></i>Read more on {{ review.source }}</a>
+      {% elsif review.source == "yelp" %}<a target="_blank" href="{{ site.doctor.contact.yelp }}"><i class="fab fa-yelp"></i>Read more on {{ review.source }}</a>
+      {% elsif review.source == "google" %}<a target="_blank" href="{{site.doctor.contact.google_reviews}}"><i class="fab fa-google" style="margin: .5em;"></i>Read more on {{ review.source }}</a>
+      {% elsif review.source == "healthgrades" %}<a target="_blank" href="{{site.doctor.contact.healthgrades}}"><i class="fas fa-user-md" style="margin: .5em;"></i>Read more on {{ review.source }}</a> {% endif %}
+    </h5>
+  </div>
+
+  {% endif %}
+  {% endfor %}
+  <div class="row d-flex justify-content-center" style="margin-top: 2em;">
+    <a href="/reviews/"><button type="button" class="request-button">Read Our Reviews</button></a>
+  </div>
+</div>

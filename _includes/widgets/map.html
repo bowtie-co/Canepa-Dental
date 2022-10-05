@@ -1,0 +1,14 @@
+
+<link rel="stylesheet" type="text/css" href="/css/components/map.css"/>
+{% if site.doctor.contact.latlng %}
+<div id="contact-map" data-coords="{{site.doctor.contact.latlng}}" style="overflow:hidden;">
+  <a href="#contact-map"></a>
+  <div class="company-location">
+    <h5>{{site.doctor.contact.company}}</h5>
+    <P>{{ site.doctor.contact.address }}</P>
+    <p>{{ site.doctor.contact.city }}, {{ site.doctor.contact.state }} {{ site.doctor.contact.country }}</p>
+  </div>
+  <div id="map-canvas"></div>
+</div>
+{% endif %}
+<script type="text/javascript" src="/js/map.js"></script>

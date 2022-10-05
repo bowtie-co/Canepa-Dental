@@ -1,0 +1,31 @@
+
+<link rel="stylesheet" type="text/css" href="/assets/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="/assets/slick/slick-theme.css">
+<div class="carousel-wrap">
+  <div class="welcome-panel">
+    {% if site.doctor.practicename %}
+    <div class="welcome-message">
+      <p class="">Welcome to</p>
+      <h3 class="text-white">{{site.doctor.practicename}}</h3>
+      <p class="text-white"><em>{% if site.doctor.practicetagline %}{{site.doctor.practicetagline}}{% else %}Over 20 years of experience{% endif %}</em></p>
+    </div>
+    {% endif %}
+    {% include elements/request-button.html %}
+  </div>
+  <div class="carousel-controller">
+    <div class="single-item slider-wrap ">
+      {% assign slides = site.hero-slides %}
+      {% for slide in slides %}
+      <div class="number{{forloop.index}} d-flex align-items-center justify-content-center" style="">
+        {% if forloop.first %}
+          <img class="slider-image img1" src="{{ slide.img_wide_path }}" alt="slide.img_alt">
+          <img class="slider-image img1-sm" src="{{ slide.img_reg_path }}" alt="slide.img_alt">
+        {% else %}
+          <img class="slider-image img1" data-src="{{ slide.img_wide_path }}" alt="slide.img_alt">
+          <img class="slider-image img1-sm" data-src="{{ slide.img_reg_path }}" alt="slide.img_alt">
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+<!-- Social links are populated by your config.yml. Add any link you need. BowTie uses fonteawesome for icons -->
+
+<div class="social-media">
+  <div>
+
+    {% if site.doctor.contact.twitter %}
+    <a target="_blank" href="{{ site.doctor.contact.twitter }}">
+      <i class="fab fa-twitter"></i>
+    </a>
+    {% endif %}
+
+
+    {% if site.doctor.contact.facebook %}
+    <a target="_blank" href="{{ site.doctor.contact.facebook }}">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    {% endif %}
+
+    {% if site.doctor.contact.yelp %}
+    <a target="_blank" href="{{ site.doctor.contact.yelp }}">
+      <i class="fab fa-yelp"></i>
+    </a>
+    {% endif %}
+
+    {% if site.doctor.contact.google_reviews %}
+    <a target="_blank" href="{{ site.doctor.contact.google_reviews }}">
+      <i class="fab fa-google"></i>
+    </a>
+    {% endif %}
+
+    {% if site.doctor.contact.linkedin %}
+    <a target="_blank" href="{{ site.doctor.contact.linkedin }}">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    {% endif %}
+
+    {% if site.doctor.contact.healthgrades %}
+    <a target="_blank" href="{{ site.doctor.contact.healthgrades }}">
+      <i class="fas fa-user-md"></i>
+    </a>
+    {% endif %}
+
+    {% if site.doctor.contact.youtube %}
+    <a target="_blank" href="{{ site.doctor.contact.youtube }}">
+      <i class="fab fa-youtube"></i>
+    </a>
+    {% endif %}
+
+    {% if site.email %}
+    <a target="_blank" href="mailto:{{ site.email }}">
+      <i class="fas fa-envelope"></i>
+    </a>
+    {% endif %}
+
+  </div>
+</div>

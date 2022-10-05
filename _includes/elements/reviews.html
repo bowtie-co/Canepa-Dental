@@ -1,0 +1,34 @@
+<link rel="stylesheet" type="text/css" href="/css/components/testimonials.css"/>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <h2 class="text-center title"><span class="underlined blue">What Our Patients Say</span></h2>
+
+    <div class="carousel-inner">
+      {% for review in site.reviews %}
+      <div class="item carousel-item {% if forloop.first == true %}active{% endif %}" style="{% if page.style.height %}height:{{ page.style.height }}{% endif %}">
+        <div class="carousel-caption">
+          <h2 class="text-center">{{ review.content }}</h2>
+          <h3 class="text-center">- {{review.author}}</h3>
+          <h3 class="text-center">{{ review.source }} </h3>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+  </div>

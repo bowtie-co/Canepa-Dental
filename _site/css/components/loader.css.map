@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "loader.css",
+	"sources": [
+		"loader.scss"
+	],
+	"sourcesContent": [
+		"/******************* CSS Loader ****************************/\n#loader{\n\t.spinner {\n\tmargin: 50px auto;\n\twidth: 50px;\n\theight: 30px;\n\ttext-align: center;\n\tfont-size: 12px;\n\t}\n\n\t.spinner > div {\n\t\tbackground-color: #34495E;\n\t\theight: 100%;\n\t\twidth: 6px;\n\t\tdisplay: inline-block;\n\n\t\t-webkit-animation: stretchdelay 1.2s infinite ease-in-out;\n\t\tanimation: stretchdelay 1.2s infinite ease-in-out;\n\t}\n\n\t.spinner .rect2 {\n\t\t-webkit-animation-delay: -1.1s;\n\t\tanimation-delay: -1.1s;\n\t}\n\n\t.spinner .rect3 {\n\t\t-webkit-animation-delay: -1.0s;\n\t\tanimation-delay: -1.0s;\n\t}\n\n\t.spinner .rect4 {\n\t\t-webkit-animation-delay: -0.9s;\n\t\tanimation-delay: -0.9s;\n\t}\n\n\t.spinner .rect5 {\n\t\t-webkit-animation-delay: -0.8s;\n\t\tanimation-delay: -0.8s;\n\t}\n\n\t@-webkit-keyframes stretchdelay {\n\t\t0%, 40%, 100% { -webkit-transform: scaleY(0.4) }\n\t\t20% { -webkit-transform: scaleY(1.0) }\n\t}\n\n\t@keyframes stretchdelay {\n\t\t0%, 40%, 100% {\n\t\t\ttransform: scaleY(0.4);\n\t\t\t-webkit-transform: scaleY(0.4);\n\t\t}  20% {\n\t\t\ttransform: scaleY(1.0);\n\t\t\t-webkit-transform: scaleY(1.0);\n\t\t}\n\t}\n}\n"
+	],
+	"names": [],
+	"mappings": "AACA,AACC,OADM,CACN,QAAQ,AAAC,CACT,MAAM,CAAE,SAAS,CACjB,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,UAAU,CAAE,MAAM,CAClB,SAAS,CAAE,IAAI,CACd,AAPF,AASC,OATM,CASN,QAAQ,CAAG,GAAG,AAAC,CACd,gBAAgB,CAAE,OAAO,CACzB,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,GAAG,CACV,OAAO,CAAE,YAAY,CAErB,iBAAiB,CAAE,sCAAsC,CACzD,SAAS,CAAE,sCAAsC,CACjD,AAjBF,AAmBC,OAnBM,CAmBN,QAAQ,CAAC,MAAM,AAAC,CACf,uBAAuB,CAAE,KAAK,CAC9B,eAAe,CAAE,KAAK,CACtB,AAtBF,AAwBC,OAxBM,CAwBN,QAAQ,CAAC,MAAM,AAAC,CACf,uBAAuB,CAAE,KAAK,CAC9B,eAAe,CAAE,KAAK,CACtB,AA3BF,AA6BC,OA7BM,CA6BN,QAAQ,CAAC,MAAM,AAAC,CACf,uBAAuB,CAAE,KAAK,CAC9B,eAAe,CAAE,KAAK,CACtB,AAhCF,AAkCC,OAlCM,CAkCN,QAAQ,CAAC,MAAM,AAAC,CACf,uBAAuB,CAAE,KAAK,CAC9B,eAAe,CAAE,KAAK,CACtB,AAED,kBAAkB,CAAlB,YAAkB,CACjB,EAAE,CAAE,GAAG,CAAE,IAAI,CAAG,iBAAiB,CAAE,WAAW,CAC9C,GAAG,CAAG,iBAAiB,CAAE,SAAW,EAGrC,UAAU,CAAV,YAAU,CACT,EAAE,CAAE,GAAG,CAAE,IAAI,CACZ,SAAS,CAAE,WAAW,CACtB,iBAAiB,CAAE,WAAW,CAC5B,GAAG,CACL,SAAS,CAAE,SAAW,CACtB,iBAAiB,CAAE,SAAW"
+}

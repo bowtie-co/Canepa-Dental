@@ -1,0 +1,24 @@
+<nav id="nav" class="navbar navbar-expand-md" role="navigation">
+  <!-- Brand and toggle grouped for mobile display -->
+  <!-- <div class="navbar-header"> -->
+    <!-- <div class="clearfix-xs"> -->
+    <a class="navbar-brand" href="/">
+      {% if site.navlogourl %}
+      <img src='{{site.navlogourl}}' alt='{{site.doctor.practicename}}' />
+      {% else %}
+      {{site.doctor.practicename}}
+      {% endif %}
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navDropdown">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="fa fa-bars fa-lg"></span>
+      <span>&nbsp;Menu</span>
+    </button>
+
+    <div class="collapse navbar-collapse flex-row-reverse" id="navDropdown">
+      {% include nav1.html %}
+    </div>
+    <!-- </div> -->
+  <!-- </div> -->
+  <!-- Collect the nav links, forms, and other content for toggling -->
+</nav>

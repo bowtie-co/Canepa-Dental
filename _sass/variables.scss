@@ -1,0 +1,97 @@
+$primary-font: Open Sans; /** body, p **/
+$primary-font-weight: 300;
+$primary-font-color: #000;
+
+$heading-font: 'Roboto'; /** h1, h2, h3, h4, h5 **/
+$heading-font-weight: 400;
+$heading-font-color: #000;
+
+$subheading-font: 'Open Sans'; /** h3, h4, h5 **/
+$subheading-font-weight: 400;
+$subheading-font-color: #000;
+
+$link-color: #8274a5;
+$link-weight: bold;
+$link-hover-color: #333;
+$link-hover-weight: null;
+
+$nav: transparent;
+$nav-hover: transparent;
+$nav-font-color: #333;
+$nav-hover-font-color: #000;
+
+$footer: #222;
+$footer-font-color: #fff;
+$footer-link-color: #fff;
+$footer-link-hover-color: null;
+$subfooter-font-color: #fff;
+$subfooter-link-color: null;
+$footer-icon-color: null;
+$footer-border: none;
+
+/***** section settings and colors ****/
+
+$section-padding: 50px 20px;
+$content-container-bg: null;
+
+$section-font-color: null;
+$section-heading-font-color: null;
+$section-subheading-font-color: null;
+$section-link-color: null;
+$section-link-hover-color: null;
+$section-bg: #fafafa;
+
+$section-bgclear-font-color: #fff;
+$section-bgclear-heading-font-color: null;
+$section-bgclear-subheading-font-color: null;
+$section-bgclear-link-color: null;
+$section-bgclear-link-hover-color: null;
+
+$section-alt-font-color: #fff;
+$section-alt-subheading-font-color: null;
+$section-alt-heading-font-color: null;
+$section-alt-link-color: null;
+$section-alt-link-hover-color: null;
+$section-alt-bg: #574486;
+
+$section-dark-font-color: #fff;
+$section-dark-heading-font-color: #eee;
+$section-dark-subheading-font-color: null;
+$section-dark-link-color: null;
+$section-dark-link-hover-color: null;
+$section-dark-bg: #482f88;
+
+$section-grey-font-color: #fff;
+$section-grey-heading-font-color: #eee;
+$section-grey-subheading-font-color: null;
+$section-grey-link-color: null;
+$section-grey-link-hover-color: null;
+$section-grey-bg: #333333;
+
+/***** buttons ****/
+
+$btn-font-color: #fff;
+$radius: null;
+$default: #4b5c7a;
+$default-hover: #444;
+$default-font-color: null;
+$info: #529CDB;
+$info-hover: #333;
+$info-font-color: null;
+$success: #4ab152;
+$success-hover: #50a263;
+$success-font-color: #fff;
+$warning: null;
+$warning-hover: null;
+$warning-font-color: null;
+
+/***** form styles ****/
+
+$form-headline-color: null;
+$form-background-color: null;
+$form-border: null;
+$form-box-shadow: null;
+
+$mediatint-color: #65c4dc;
+$bgoverlayDark: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+$bgoverlayLight: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.9));

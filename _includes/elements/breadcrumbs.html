@@ -1,0 +1,31 @@
+{% if include.context contains "glossary" %}
+ <ol class="breadcrumb outside">
+   <li><a href="/">Home</a></li>
+   <li><a href="/glossary/">Glossary</a></li>
+ </ol>
+{% elsif include.context contains "documents" %}
+ <ol class="breadcrumb outside">
+   <li><a href="/">Home</a></li>
+   <li><a href="/documents/">Documents Library</a></li>
+ </ol>
+{% elsif include.context contains "team" %}
+<ol class="breadcrumb outside">
+  <li><a href="/">Home</a></li>
+  <li><a href="/team/">Our Office</a></li>
+</ol>
+{% elsif include.context contains "procedures" %}
+{% assign links = page.permalink | split: "/"%}
+<ol class="breadcrumb">
+  <li class=""><a href="/">Home</a></li>
+  {% for link in links offset:1 %}
+  <li><a href="{% if previous %}/{{previous}}{% endif %}/{{link}}/">{{link | capitalize | replace: '-',' '}}</a></li>
+  {% assign previous = link %}
+  {% endfor %}
+</ol>
+{% elsif include.context contains "insurance" %}
+<ol class="breadcrumb outside">
+  <li><a href="/">Home</a></li>
+  <li><a href="/new-patients/">New Patients</a></li>
+  <li><a href="/insurance/">Payment and Insurance Options</a></li>
+</ol>
+{% endif %}

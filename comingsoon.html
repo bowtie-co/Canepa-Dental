@@ -1,0 +1,61 @@
+---
+title: "Coming Soon"
+permalink: "/"
+exclude_from_nav: false
+published: false
+---
+
+<!DOCTYPE html>
+<html class="bg">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="./maintenance/image/png" href="/img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="./maintenance/image/png" href="/img/favicon-16x16.png" sizes="16x16" />
+    <link href="./maintenance/css/comingsoon.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="pagewrapper">
+      <div id="content">
+        <div class="section text-center">
+          {% if site.logourl %}
+          <img class="img logo" src="{{ site.logourl }}"/>
+          {% else %}
+          <img class="img logo" src="./maintenance/img/asird-logo.png"/>
+          {% endif %}
+
+          <h1>We'll Be Back</h1>
+          <h4>{%if site.doctor.practicename %}The {{ site.doctor.practicename }} site{% else %}This website{% endif %} is down for maintenance. We appreciate your patience.</h4>
+
+          {% if site.email %}
+          <hr />
+          <div class="row-80 formwrapper">
+            <h4>Contact Us With any Immediate Needs</h4>
+            {% include widgets/contact-form.html %}
+
+            {% if site.doctor.contact.phone %}
+            <h3 class="call-link">Or call: <a href="tel:{{ site.doctor.contact.phone }}">{{ site.doctor.contact.phone }}</a><h3>
+            {% else %}
+            <h3 class="call-link">Or call: <a href="tel:754-307-6990">754-307-6990</a><h3>
+            {% endif %}
+          </div>
+          {% else %}
+          {% endif %}
+
+
+        </div>
+
+        <footer id="footer">
+          <div class="container">
+            <div class="row subfooter">
+              <p>Please contact <a href="http://ASIRD.org">ASIRD with questions about membership</a>. &nbsp; &nbsp; &copy; 2018</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+  </body>
+</html>

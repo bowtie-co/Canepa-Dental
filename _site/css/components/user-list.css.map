@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "user-list.css",
+	"sources": [
+		"user-list.scss"
+	],
+	"sourcesContent": [
+		"/******************* User List ****************************/\n.user-list {\n  color:#000;\n  font-weight:400;\n  font-size:14px;\n  span {\n    word-break:keep-all;\n    }\n  img{\n    width: 50px;\n    height: 50px;\n    margin-right:10px;\n  }\n  .rating{\n    float:right;\n    line-height:50px;\n    font-size: 12px;\n    color:#000;\n  }\n}\n.list-group-item.active {\n  .rating, .rating i, .rating:hover, .rating:hover i{\n    color:#fff !important;\n  }\n}\na.list-group-item:hover, a.list-group-item:focus {\n    color: #fff;\n    text-decoration: none;\n    background-color: #34495E;\n    .rating, .rating i{\n      color:#fff !important;\n    }\n  }\n"
+	],
+	"names": [],
+	"mappings": "AACA,AAAA,UAAU,AAAC,CACT,KAAK,CAAC,IAAI,CACV,WAAW,CAAC,GAAG,CACf,SAAS,CAAC,IAAI,CAef,AAlBD,AAIE,UAJQ,CAIR,IAAI,AAAC,CACH,UAAU,CAAC,QAAQ,CAClB,AANL,AAOE,UAPQ,CAOR,GAAG,AAAA,CACD,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,YAAY,CAAC,IAAI,CAClB,AAXH,AAYE,UAZQ,CAYR,OAAO,AAAA,CACL,KAAK,CAAC,KAAK,CACX,WAAW,CAAC,IAAI,CAChB,SAAS,CAAE,IAAI,CACf,KAAK,CAAC,IAAI,CACX,AAEH,AACE,gBADc,AAAA,OAAO,CACrB,OAAO,CADT,gBAAgB,AAAA,OAAO,CACZ,OAAO,CAAC,CAAC,CADpB,gBAAgB,AAAA,OAAO,CACD,OAAO,CAAC,KAAK,CADnC,gBAAgB,AAAA,OAAO,CACc,OAAO,CAAC,KAAK,CAAC,CAAC,AAAA,CAChD,KAAK,CAAC,eAAe,CACtB,AAEH,AAAA,CAAC,AAAA,gBAAgB,CAAC,KAAK,CAAE,CAAC,AAAA,gBAAgB,CAAC,KAAK,AAAC,CAC7C,KAAK,CAAE,IAAI,CACX,eAAe,CAAE,IAAI,CACrB,gBAAgB,CAAE,OAAO,CAI1B,AAPH,AAII,CAJH,AAAA,gBAAgB,CAAC,KAAK,CAInB,OAAO,CAJX,CAAC,AAAA,gBAAgB,CAAC,KAAK,CAIV,OAAO,CAAC,CAAC,CAJG,CAAC,AAAA,gBAAgB,CAAC,KAAK,CAI5C,OAAO,CAJc,CAAC,AAAA,gBAAgB,CAAC,KAAK,CAInC,OAAO,CAAC,CAAC,AAAA,CAChB,KAAK,CAAC,eAAe,CACtB"
+}

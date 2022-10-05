@@ -1,0 +1,62 @@
+{% if include.noSlide %}
+<h2 class="title text-center"><span class="underlined">Our Office</span></h2>
+<div class="row d-flex align-items-center">
+
+  <div class="col-md-5 text-left">
+    <p class="">{{site.description}}</p>
+  </div>
+  <div class="col-md-7">
+    <link rel="stylesheet" type="text/css" href="/css/components/testimonials.css"/>
+      <div id="office-slider-noslide" class="">
+        <div class="">
+          {% for slide in site.office-slides %}
+          <div class="item active" style="{% if page.style.height %}height:{{ page.style.height }}{% endif %}">
+            <img data-src="{{ slide.img_path }}" alt="">
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+  </div>
+</div>
+{% else %}
+<h2 class="title text-center"><span class="underlined">Our Office</span></h2>
+<div class="row d-flex align-items-center">
+
+  <div class="col-md-5 text-left">
+    <p class="">{{site.description}}</p>
+  </div>
+  <div class="col-md-7">
+
+    <link rel="stylesheet" type="text/css" href="/css/components/testimonials.css"/>
+      <div id="office-slider" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          {% for slide in site.office-slides %}
+          <li data-target="#office-slider" data-slide-to="{{forloop.index0}}" {% if forloop.first %}class="active"{% endif %}></li>
+          {% endfor %}
+        </ul>
+
+        <div class="carousel-inner">
+          {% for slide in site.office-slides %}
+          <div class="item carousel-item {% if forloop.first == true %}active{% endif %}" style="{% if page.style.height %}height:{{ page.style.height }}{% endif %}">
+            {% if forloop.first %}
+            <img data-src="{{ slide.img_path }}" alt="">
+            {% else %}
+            <img data-src="{{ slide.img_path }}" alt="">
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#office-slider" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#office-slider" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+  </div>
+</div>
+{% endif %}

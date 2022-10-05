@@ -1,0 +1,11 @@
+{% assign stars = null %}
+{% for i in (1...5) %}
+  {% if i <= review.stars | plus: 0 %}
+    {% assign stars = stars | append: '&#9733;' %}
+  {% else %}
+    {% assign stars = stars | append: '&#9734;' %}
+  {% endif %}
+{% endfor %}
+<div class="stars">
+  <p class="star-rating"><span>{{ stars }}</span></p>
+</div>

@@ -1,0 +1,23 @@
+<footer id="footer" class="{% if page.style.stickyfooter %}sticky{% endif %}" {% if page.style.footer_color %}style="background:{{ page.style.footer_color }};"{% endif %}>
+  <div class="">
+    {% if site.footer_logourl %}
+    <img class="footer-logo" data-src="{{site.footer_logourl}}" alt="footer logo">
+    {% else %}
+    <h3 class="text-white">{{site.doctor.practicename}}</h3>
+    {% endif %}
+  </div>
+  <div class="small" style="margin-top: 1em;">
+    {% include footer-nav.html %}
+  </div>
+  <div id="google_translate_element"></div>
+
+</footer>
+<link href="/css/main.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
+<script type="text/javascript" src="/js/theme.js" defer></script>
+<!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
+<script type="text/javascript" src="/js/particle.js" defer></script> -->
+<script type="text/javascript" src="/assets/slick/slick.min.js"></script>
+<script type="text/javascript" src='/assets/js/slick-carousel.js'></script>
+<script src="https://maps.googleapis.com/maps/api/js?key={{site.google_api_key}}&callback=initMap" async defer></script>

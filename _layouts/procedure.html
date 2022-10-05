@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% include head.html %}
+<body>
+  <div id="wrapper" class="">
+    <div id="main">
+        {% include header.html %}
+      <div class="{{page.layout}}">
+        <section class="dark text-center">
+          <div class="container">
+              <div class="section-header">
+                <div class="header-wrapper">
+                  <div class="text-wrapper">
+                    <h5>{{page.category | capitalize}}</h5>
+                    <h1 class="title">{{page.title}}</h1>
+                    <h4>Performed by {{site.doctor.contact.company}}</h4>
+                    {% include elements/breadcrumbs.html context= page.url %}
+
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+        <section class="container">
+          {% assign sections = page.sections %}
+          {% for section in sections %}
+          {% capture thecycle %}{% cycle 'even','odd' %}{% endcapture %}
+          <h2 class="title text-center"><span class="underlined blue">{{section.title}}</h2>
+          <div class="row d-flex align-items-center">
+            {% if thecycle == 'even'%}
+            {% if section.img_path %}
+            <div class="col-sm-5">
+              <div class="image-wrapper">
+                <img data-src="{{section.img_path}}" alt="">
+              </div>
+            </div>
+            {% endif %}
+            <div class="text-left {% if section.img_path %}col-sm-7{% else %}col-12{% endif %}">
+              <p class="text-left">{{section.text}}</p>
+            </div>
+            {% else %}
+            <div class="text-left {% if section.img_path %}col-sm-7{% else %}col-12{% endif %}">
+              <p class="text-left">{{section.text}}</p>
+            </div>
+              {% if section.img_path %}
+            <div class="col-sm-5">
+              <div class="image-wrapper">
+                <img data-src="{{section.img_path}}" alt="">
+              </div>
+            </div>
+            {% endif %}
+            {% endif %}
+          </div>
+          {% endfor %}
+        </section>
+        <section class="alt">
+          <div class="container">
+            {% include contact.html %}
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  {% include footer.html %}
+  {% include tracking.html %}
+</body>
