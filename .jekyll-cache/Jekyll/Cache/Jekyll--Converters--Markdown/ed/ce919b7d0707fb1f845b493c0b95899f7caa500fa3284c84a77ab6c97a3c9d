@@ -1,0 +1,42 @@
+I"¥
+<link rel="stylesheet" type="text/css" href="/assets/slick/slick.css" />
+
+<link rel="stylesheet" type="text/css" href="/assets/slick/slick-theme.css" />
+
+<div class="carousel-wrap">
+  <div class="welcome-panel">
+    
+    <div class="welcome-message">
+      <p class="">Welcome to</p>
+      <h3 class="text-white">Canepa Dental</h3>
+      <p class="text-white"><em>Over 20 years of experience.</em></p>
+    </div>
+    
+    <div class="">
+  <a href="/contact/"><button type="button" class="request-button light">Request an Appointment</button></a>
+</div>
+
+  </div>
+  <div class="carousel-controller">
+    <div class="single-item slider-wrap ">
+      
+      
+      <div class="number1 d-flex align-items-center justify-content-center" style="">
+        
+          <img class="slider-image img1" src="/master_hero_images\the-dalles-heroes\Ts-Slider-1.jpg" alt="slide.img_alt" />
+          <img class="slider-image img1-sm" src="/master_hero_images\the-dalles-heroes\Ts-Slider-1.jpg" alt="slide.img_alt" />
+        
+      </div>
+      
+      <div class="number2 d-flex align-items-center justify-content-center" style="">
+        
+          <img class="slider-image img1" data-src="/master_hero_images\the-dalles-heroes\Ts-Slider-2.jpg" alt="slide.img_alt" />
+          <img class="slider-image img1-sm" data-src="/master_hero_images\the-dalles-heroes\Ts-Slider-2.jpg" alt="slide.img_alt" />
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+:ET

@@ -1,0 +1,23 @@
+I"8<h2 class="title text-center"><span class="underlined blue">About Al Canepa, DDS</span></h2>
+<div class="container h-100">
+  <div class="row-80 row d-flex justify-content-center align-items-center" style="margin-bottom:0;">
+    <div class="col-sm-12 col-md-7">
+      <p class="text-left">Dr. Canepa was born in a small town in Northern California. After setting up his original practice, he joined an implant study group in Pennsylvania. He studied with Dr. Carl Misch for two years learning to place and restore implants. He has dedicated his life to helping patients achieve optimal oral health. In 2012, he decided to further his implant knowledge by joining the Synergy Training Program. He is still an active participant in this study group.</p>
+      
+      
+      <div class="education">
+        <h4 class="title text-center"><span class="underlined blue">Education</span></h4>
+        <p><strong>Doctor of Dental Surgery</strong></p><p>Case Western Reserve School of Dentistry, Cleveland, OH</p><p><strong>Bachelor of Science</strong></p><p>University of Southern California</p>
+      </div>
+      
+      
+    </div>
+    <div class="col-sm-12 col-md-5 align-self-end">
+      <div class="img-fluid">
+        <img data-src="/master_bio_images\canepa-team\Dr_Canepa_Featured.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+
+:ET
