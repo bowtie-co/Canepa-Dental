@@ -1,5 +1,5 @@
 ---
-document_path: /images/pdfs/Dr.Al_Canepa_Notice_of_Privacy_Practices.pdf
+document_path: /images/pdfs/Canepa-Dental-NOTICE-PRIVACY-PRACTICES-2026.docx.pdf
 title: Notice of Privacy Practices
 intro_content:
 ---
