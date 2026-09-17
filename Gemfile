@@ -11,4 +11,5 @@ gem "jekyll"
 # Required on Ruby 3.4+ (Netlify default); extracted from stdlib
 gem "csv"
 gem "base64"
-gem "logger" 
+gem "logger"
+gem "bigdecimal" 
